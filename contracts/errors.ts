@@ -1,0 +1,9 @@
+export const ERROR_CODES = {
+  UNAUTHORIZED: "UNAUTHORIZED",
+  FORBIDDEN: "FORBIDDEN",
+  NOT_FOUND: "NOT_FOUND",
+  RATE_LIMITED: "RATE_LIMITED",
+  INTERNAL: "INTERNAL",
+} as const;
+
+export type ErrorCode = keyof typeof ERROR_CODES;
